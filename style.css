@@ -747,3 +747,527 @@ font-size: 10px;
   width: 12px;
 }
 }
+
+@media screen and (max-width: 425px){
+
+  main{
+    width: 100%;
+background-color: aliceblue;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.content{
+  
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px  10px 5px rgba(211, 211, 211, 0.338);
+
+}
+h3{
+    font-size: 10px;
+  
+    padding-bottom: 20px ;
+    padding-top: 20px;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    text-transform: uppercase;
+
+   color: #000000;
+}
+
+span{
+    color: red;
+    padding-right: 5px;
+}
+
+
+.content input{
+  width:280px;
+ padding:7px;
+
+  font-size: 8px;
+}
+.label1{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    width:280px;
+    justify-content: space-between;
+}
+.label1 input{
+    width: 280px !important;
+}
+
+
+p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+font-size: 9px;
+  }
+
+
+label:nth-child(6){
+   
+
+padding: 7px;
+
+
+    display: flex;
+    align-items: center;
+   padding-left: 4rem;
+     gap: 10px;
+
+     width: 380px;
+}
+label:nth-child(6) p{
+  font-size: 8px;
+margin-top: 7px;
+}
+
+
+
+   
+
+  .btnLogin{
+    padding: 5px 0px;
+    width:280px;
+
+font-size: 10px;
+}
+
+.check {
+  
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -6.5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(34, 50, 84, 0.046);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+.svg1{
+  width: 12px;
+}
+}
+
+@media screen and (max-width: 375px){
+
+  main{
+    width: 100%;
+background-color: aliceblue;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.content{
+  
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px  10px 5px rgba(211, 211, 211, 0.338);
+
+}
+h3{
+    font-size: 10px;
+  
+    padding-bottom: 20px ;
+    padding-top: 20px;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    text-transform: uppercase;
+
+   color: #000000;
+}
+
+span{
+    color: red;
+    padding-right: 5px;
+}
+
+
+.content input{
+  width:280px;
+ padding:7px;
+
+  font-size: 8px;
+}
+.label1{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    width:280px;
+    justify-content: space-between;
+}
+.label1 input{
+    width: 280px !important;
+}
+
+
+p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+font-size: 9px;
+  }
+
+
+label:nth-child(6){
+   
+
+padding: 7px;
+
+
+    display: flex;
+    align-items: center;
+   padding-left: 4rem;
+     gap: 10px;
+
+     width: 380px;
+}
+label:nth-child(6) p{
+  font-size: 8px;
+margin-top: 7px;
+}
+
+
+
+   
+
+  .btnLogin{
+    padding: 5px 0px;
+    width:280px;
+
+font-size: 10px;
+}
+
+.check {
+  
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -6.5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(34, 50, 84, 0.046);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+.svg1{
+  width: 12px;
+}
+}
+@media screen and (max-width: 320px){
+
+  main{
+    width: 100%;
+background-color: aliceblue;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.content{
+  
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px  10px 5px rgba(211, 211, 211, 0.338);
+
+}
+h3{
+    font-size: 9px;
+  
+    padding-bottom: 20px ;
+    padding-top: 20px;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    text-transform: uppercase;
+
+   color: #000000;
+}
+
+span{
+    color: red;
+    padding-right: 5px;
+}
+
+
+.content input{
+  width:250px;
+ padding:7px;
+
+  font-size: 8px;
+}
+.label1{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    width:250px;
+    justify-content: space-between;
+}
+.label1 input{
+    width: 250px !important;
+}
+
+
+p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+font-size: 9px;
+  }
+
+
+label:nth-child(6){
+   
+
+padding: 7px;
+
+
+    display: flex;
+    align-items: center;
+   padding-left: 4rem;
+     gap: 10px;
+
+     width: 380px;
+}
+label:nth-child(6) p{
+  font-size: 8px;
+margin-top: 7px;
+}
+
+
+
+   
+
+  .btnLogin{
+    padding: 5px 0px;
+    width:250px;
+
+font-size: 10px;
+}
+
+.check {
+  
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -6.5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(34, 50, 84, 0.046);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+.svg1{
+  width: 12px;
+}
+}
