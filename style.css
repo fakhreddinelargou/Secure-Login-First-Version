@@ -1,0 +1,749 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* fonts 
+
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+
+
+*/
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+}
+
+main{
+    width: 100%;
+background-color: aliceblue;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.content{
+    background-color: white;
+    width: 55%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px  10px 5px rgba(211, 211, 211, 0.338);
+
+}
+h3{
+    font-size:3rem;
+    padding-right: 5rem;
+    padding-bottom: 20px ;
+    padding-top: 20px;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    text-transform: uppercase;
+
+   color: #000000;
+}
+
+span{
+    color: red;
+    padding-right: 5px;
+}
+input{
+    outline: none;
+    padding: 20px;
+    border: 1px solid rgba(229, 227, 227, 0.553);
+    box-shadow: 0px 0px 5px 3px rgba(220, 218, 218, 0.155);
+    border-radius: 5px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+  
+}
+
+
+.label1{
+    display: flex;
+
+    width:80rem;
+    justify-content: space-between;
+}
+.label1 input{
+    width: 39rem !important;
+}
+
+.content input{
+    width: 80rem;
+  
+}
+p{
+    padding-bottom: 1.5rem;
+    padding-top: 2rem;
+font-size: 22px;
+  }
+
+
+label:nth-child(6){
+   
+padding-left: 25px;
+padding: 10px;
+font-size: 11px !important;
+
+    display: flex;
+    align-items: center;
+   
+     gap: 10px;
+
+     width: 80rem;
+}
+label:nth-child(6) p{
+  font-size: 18px;
+  margin-bottom: 11px;
+}
+
+
+
+/* FOR CHECKBOX */
+
+
+/* From Uiverse.io by mrhyddenn */ 
+/* From Uiverse.io by mrhyddenn */ 
+.check {
+  
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -8.5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(34, 50, 84, 0.046);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+  }
+  
+  .check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+  }
+  
+  .check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+  }
+  
+  .check:hover:before {
+    opacity: 1;
+  }
+  
+  .check:hover svg {
+    stroke: #4285f4;
+  }
+  
+  #cbx:checked + .check svg {
+    stroke: #4285f4;
+  }
+  
+  #cbx:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  
+  #cbx:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }
+  /* inout */
+   
+
+  .btnLogin{
+    padding: 1.5rem 0px;
+    width:70rem;
+  
+    background: linear-gradient(to right , rgba(71, 245, 71, 0.872) , rgb(170, 244, 170));
+border: none;  
+margin-bottom: 20px;
+border-radius: 5px;
+color: white; 
+transition: 0.4s;
+font-family: "Poppins", serif;
+font-weight: 400;
+font-style: normal;
+font-size: 22px;
+}
+.btnLogin:hover{
+
+    background: linear-gradient(to right , rgba(12, 189, 12, 0.872) , rgb(96, 247, 96));
+
+}
+
+
+
+.if-add-info-not-exact{
+    border: solid 1.5px rgba(255, 0, 0, 0.553);
+}
+label:nth-child(4){
+ position: relative;
+}
+.lvls{
+  width: 170px;
+  height: 70px;
+background-color: rgb(255, 255, 255);
+border-radius: 5px;
+text-align: center;
+box-shadow: 0px 0px 5px 3px rgba(220, 218, 218, 0.155);
+
+  position: absolute;
+ left:  50%;
+  top: 50%;
+transform: translate(-50%,-50%);
+
+  padding: 10px;
+}
+.lvls p{
+  font-size: 10px;
+  color: rgb(171, 171, 171);
+
+}
+/* .lvls .lvlP:nth-child(1){
+  background-color: yellow;
+  height: 5px;
+width: 25px;
+}
+.lvls .lvlP:nth-child(2){
+  background-color: rgb(255, 174, 0);
+  height: 5px;
+width: 25px;
+}
+.lvls .lvlP:nth-child(3){
+  background-color: rgb(21, 255, 0);
+  height: 5px;
+width: 25px;
+} */
+
+
+.hidden{
+  display: none;
+}
+
+.message {
+  opacity: 0; /* يبدأ النص مخفيًا */
+  color: green;
+  font-size: 16px;
+  animation: fadeInOut 5s ease-in-out forwards; /* تطبيق التحريك */
+}
+
+/* تعريف التحريك */
+@keyframes fadeInOut {
+  0% {
+      opacity: 0; /* النص مخفي */
+  }
+  20% {
+      opacity: 1; /* النص يظهر */
+  }
+  80% {
+      opacity: 1; /* النص يظل ظاهرًا */
+  }
+  100% {
+      opacity: 0; /* النص يختفي */
+  }
+}
+
+
+
+@media screen and (max-width: 1440px) {
+
+  main{
+    width: 100%;
+background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.content{
+    background-color: white;
+ 
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px  10px 5px rgba(211, 211, 211, 0.338);
+
+}
+h3{
+    font-size: 21.5px;
+  
+    padding-bottom: 20px ;
+    padding-top: 20px;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    text-transform: uppercase;
+
+   color: #000000;
+}
+
+span{
+    color: red;
+    padding-right: 5px;
+}
+
+
+.content input{
+  width: 450px;
+ padding:7px;
+
+  font-size: 11px;
+}
+.label1{
+    display: flex;
+
+    width:450px;
+    justify-content: space-between;
+}
+.label1 input{
+    width: 200px !important;
+}
+
+
+p{
+    padding-bottom: 10px;
+    padding-top: 10px;
+font-size: 12px;
+  }
+
+
+label:nth-child(6){
+   
+padding-left: 25px;
+padding: 10px;
+font-size: 11px !important;
+
+    display: flex;
+    align-items: center;
+   
+     gap: 10px;
+
+     width: 450px;
+}
+label:nth-child(6) p{
+  font-size: 11px;
+margin-top: 7px;
+}
+
+
+
+   
+
+  .btnLogin{
+    padding: 7px 0px;
+    width:450px;
+
+font-size: 13px;
+}
+
+
+
+
+
+
+
+  
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+  main{
+    width: 100%;
+background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.content{
+ 
+    background-color: white;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px  10px 5px rgba(211, 211, 211, 0.338);
+
+}
+h3{
+    font-size: 16px;
+  
+    padding-bottom: 20px ;
+    padding-top: 20px;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    text-transform: uppercase;
+
+   color: #000000;
+}
+
+span{
+    color: red;
+    padding-right: 5px;
+}
+
+
+.content input{
+  width: 390px;
+ padding:7px;
+
+  font-size: 8px;
+}
+.label1{
+    display: flex;
+
+    width:390px;
+    justify-content: space-between;
+}
+.label1 input{
+    width: 190px !important;
+}
+
+
+p{
+    padding-bottom: 8px;
+    padding-top: 8px;
+font-size: 10px;
+  }
+
+
+label:nth-child(6){
+   
+padding-left: 25px;
+padding: 7px;
+
+
+    display: flex;
+    align-items: center;
+   
+     gap: 10px;
+
+     width: 370px;
+}
+label:nth-child(6) p{
+  font-size: 8px;
+margin-top: 7px;
+}
+
+
+
+   
+
+  .btnLogin{
+    padding: 7px 0px;
+    width:370px;
+
+font-size: 10px;
+}
+
+.check {
+  
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -6.5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(34, 50, 84, 0.046);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+.svg1{
+  width: 12px;
+}
+
+}
+
+
+@media screen and (max-width: 768px){
+
+  main{
+    width: 100%;
+background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.content{
+  
+    background-color: white;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px  10px 5px rgba(211, 211, 211, 0.338);
+
+}
+h3{
+    font-size: 10px;
+  
+    padding-bottom: 20px ;
+    padding-top: 20px;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    text-transform: uppercase;
+
+   color: #000000;
+}
+
+span{
+    color: red;
+    padding-right: 5px;
+}
+
+
+.content input{
+  width:280px;
+ padding:7px;
+
+  font-size: 8px;
+}
+.label1{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    width:280px;
+    justify-content: space-between;
+}
+.label1 input{
+    width: 280px !important;
+}
+
+
+p{
+    padding-bottom: 5px;
+    padding-top: 5px;
+font-size: 9px;
+  }
+
+
+label:nth-child(6){
+   
+
+padding: 7px;
+
+
+    display: flex;
+    align-items: center;
+   padding-left: 4rem;
+     gap: 10px;
+
+     width: 380px;
+}
+label:nth-child(6) p{
+  font-size: 8px;
+margin-top: 7px;
+}
+
+
+
+   
+
+  .btnLogin{
+    padding: 5px 0px;
+    width:280px;
+
+font-size: 10px;
+}
+
+.check {
+  
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: -6.5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(34, 50, 84, 0.046);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg {
+  stroke: #4285f4;
+}
+
+#cbx:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+.svg1{
+  width: 12px;
+}
+}
