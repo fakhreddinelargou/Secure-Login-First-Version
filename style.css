@@ -1146,7 +1146,7 @@ span{
 
 
 .content input{
-  width:250px;
+  width:230px;
  padding:7px;
 
   font-size: 8px;
@@ -1155,11 +1155,11 @@ span{
     display: flex;
     flex-direction: column;
 align-items: center;
-    width:250px;
+    width:230px;
     justify-content: space-between;
 }
 .label1 input{
-    width: 250px !important;
+    width: 230px !important;
 }
 
 
@@ -1181,7 +1181,7 @@ padding: 7px;
    padding-left: 4rem;
      gap: 10px;
 
-     width: 380px;
+     width: 230px;
 }
 label:nth-child(6) p{
   font-size: 8px;
@@ -1194,7 +1194,7 @@ margin-top: 7px;
 
   .btnLogin{
     padding: 5px 0px;
-    width:250px;
+    width:230px;
 
 font-size: 10px;
 }
