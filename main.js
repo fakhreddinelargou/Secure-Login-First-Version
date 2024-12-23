@@ -5,14 +5,14 @@ const input3 = document.querySelector('.in3')
 const input4 = document.querySelector('.in4')
 const input5 = document.querySelector('.in5')
 const input6 = document.querySelector('.checkbox')
-
+const animation = document.querySelector('.codes') 
   const text =  document.querySelector('.error')
 
 // const lvl1 = document.querySelector('.lvl1')
 // const lvl2 = document.querySelector('.lvl2')
 // const lvl3 = document.querySelector('.lvl3')
 const lvls = document.querySelector('.lvls')
-lvls.classList.add('hidden')
+//lvls.classList.add('hidden')
 // FUNCTION
 
 function btn(){
@@ -31,13 +31,14 @@ if (!inputVAlue3.endsWith('@gmail.com') || inputVAlue3 === '@gmail.com'){
 
     input3.classList.remove('if-add-info-not-exact')
 }
-if(!inputVAlue6.checked){
+if(!input6.checked){
 
  text.style.color = 'red'
 
 
 }else{
-        console.log('good');
+     text.style.color = 'black'
+
 }
 
 if(inputVAlue1 === ''){ 
@@ -55,18 +56,21 @@ if(inputVAlue2 === ''){
     input2.classList.remove('if-add-info-not-exact')
 }
 
-if(inputVAlue4 === '' || !/\d/.test(inputVAlue4) || inputVAlue4.length < 10 ){
+if(inputVAlue4 === '' || !/\d/.test(inputVAlue4) || inputVAlue4.length < 10 || !/[A-Z]/.test(inputVAlue4)  ){
  
- if( !inputVAlue4.includes('@') || !/[A-Z]/.test(inputVAlue4) ){
-    lvls.classList.remove('hidden')
-    lvls.classList.add('message')
- }else{
-    console.log('ntg');
- }
- 
-    
-    input4.classList.add('if-add-info-not-exact')
+
+    if(!inputVAlue4.includes('@') && inputVAlue4.length >= 7 ){ 
+    animation.classList.remove('hidden')
+// animation.classList.toggle('message')
+input4.classList.add('if-add-info-not-exact')
 }else{
+    input4.classList.add('if-add-info-not-exact')
+  //  animation.classList.remove('hidden')
+
+ }
+    
+}else{
+
 // if(inputVAlue4.includes('@') ){
 //     // lvl1.classList.remove('hidden')
 //     lvls.style.backgroundcolor = 'yellow'
