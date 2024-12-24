@@ -407,7 +407,8 @@ width: 25px;
 }
 
 .codes{
-  font-size: 10px;
+  font-size: 0.9vw;
+  /* max-width: 800px; */
   padding-left: 20px;
   color: rgba(255, 0, 0, 0.795);
 }
@@ -440,5 +441,10 @@ main{
 }
 .btnLogin{
   padding: 6px ;
+}
+.codes{
+  font-size: 1.5vw;
+  padding: 0 !important;
+  color: rgba(255, 0, 0, 0.795);
 }
 }
