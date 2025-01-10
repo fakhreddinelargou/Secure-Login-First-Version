@@ -11,7 +11,8 @@ const loginForAll = document.querySelector('.login-for-all')
 const lvls = document.querySelector(".lvls");
 const singUp = document.querySelector('.singup')
 const animation2 = document.querySelector('.message')
-const charge = document.querySelector('.charge')
+const stars = document.querySelector('.starscon')
+// const charge = document.querySelector('.charge')
 function btn() {
   const inputVAlue1 = input1.value;
   const inputVAlue2 = input2.value;
@@ -73,12 +74,12 @@ function btn() {
 // loginForAll.classList.add('hidden')
 
 //   }
-let isValid = true; // متغير للتحقق من صحة جميع الشروط
+let isValid = true; 
 
-// التحقق من كل شرط
+
 if (!inputVAlue3.endsWith("@gmail.com") || inputVAlue3 === "@gmail.com") {
   input3.classList.add("if-add-info-not-exact");
-  isValid = false; // إذا كان الشرط غير صحيح، يتم التغيير إلى false
+  isValid = false; 
 } else {
   input3.classList.remove("if-add-info-not-exact");
 }
@@ -128,19 +129,41 @@ if (inputVAlue5 !== inputVAlue4) {
   input5.classList.remove("if-add-info-not-exact");
 }
 
-// التحقق النهائي
+
 if (isValid) {
-charge.classList.remove('hidden')
-charge.classList.add('message')
-  singUp.classList.remove("hidden"); // عرض عنصر signup
-  loginForAll.classList.add("hidden"); // إخفاء عنصر loginForAll
+// charge.classList.remove('hidden')
+// charge.classList.add('message')
+//  singUp.classList.remove("hidden"); 
+  loginForAll.classList.add("hidden"); 
+  stars.classList.remove('hidden')
 
 } else {
-  // إذا كانت هناك شروط غير صحيحة
-  console.log("هناك شروط غير صحيحة");
-}
+
+ console.log('this not true')
 
 }
 
+}
 
 
+
+// const btnForLogin = document.querySelector('bnt-for-login')
+// const originEmail = document.getElementById('origin-email')
+// const originPassword = document.getElementById('origin-password')
+// function  btnlogins(){
+
+//   const originEmailValue = originEmail.value
+//  const originPasswordValue = originPassword.value
+// if(inputVAlue3 !== originEmailValue && inputVAlue4 !== originPasswordValue){
+  
+//   input2.classList.add("if-add-info-not-exact");
+
+
+// }else
+
+// input2.classList.remove("if-add-info-not-exact");
+// loginForAll.classList.add('hidden')
+// singUp.classList.add('hidden')
+// stars.classList.remove('hidden')
+
+// }
